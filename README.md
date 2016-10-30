@@ -34,22 +34,32 @@ __2.3 Create viewers on website in python web framework.__
 + Docker
 
 
-## 3. Plan
+## 3. How to use the project
 
-| 项目        | 价格   |  数量  |
-| --------   | -----:  | :----:  |
-| 计算机     | \$1600 |   5     |
-| 手机        |   \$12   |   12   |
-| 管线        |    \$1    |  234  |
+Planing...
 
 ## 4. Join us
 
 If you are a student in SDUT or not, if you are interested in this project, welcome to join us. Please email to the contributor.
 
+### How to Contribute?
+
++ fork project and commit pull requests
+
++ create issue
+
++ email to author
+
 ## 5. Document
 
 See [here]().
 
-## 6. To Do List
+## 6. License
 
-Thinking...
+(The Apache License)
+
+Copyright (c) 2016 All right reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0

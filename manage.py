@@ -11,9 +11,12 @@ def make_shell_context():
     return dict(app=app, db=db)
 
 
+def make_crawl(obj):
+    return 'This is a test from %s', obj
+
+
 manager.add_command('shell', Shell(make_context=make_shell_context))
 manager.add_command('db', MigrateCommand)
-
 
 if __name__ == '__main__':
     manager.run()
