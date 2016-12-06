@@ -52,7 +52,7 @@ If you are a student in SDUT or not, if you are interested in this project, welc
 
 ## 5. Document
 
-See [here](https://github.com/lvhuiyang/SIIS/tree/lhy/doc).
+See [here](https://github.com/lvhuiyang/SIIS/tree/master/doc).
 
 ## 6. License
 
