@@ -5,8 +5,8 @@ class Student(db.Model):
     # 表名：students
     # 列含义：id，学号， 学生姓名，学生性别，年级，专业id，班级id，层次（本科），学制（4年）
     __tablename__ = 'students'
-    id = db.Column(db.Integer(), primary_key=True)
-    number = db.Column(db.Integer(), index=True, nullable=False)
+    id = db.Column(db.Integer(), primary_key=True, index=True)
+    number = db.Column(db.String(64), index=True, nullable=False,unique=True)
     name = db.Column(db.String(64), index=True, nullable=False)
     sex = db.Column(db.String(64), nullable=False)
     grade = db.Column(db.Integer, nullable=False)
