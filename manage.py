@@ -22,11 +22,9 @@ def make_shell_context():
 
 
 @manager.command
-def hello():
-    # print('HelloWorld %s' % stu_number)
-    # xhcx.parse(xhcx.splider('1411'))
-    xhcx.parse(response=xhcx.splider('1411'), year='1411')
-    # xhcx.splider('1411')
+def hello(year):
+    xhcx.parse(response=xhcx.splider(year), year=year)
+    print('%s 数据爬取完成' % year)
 
 
 @manager.command

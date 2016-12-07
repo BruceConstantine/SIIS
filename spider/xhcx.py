@@ -52,7 +52,6 @@ def parse(response, year):
     while n < td_length:
         stu_number = td[n + 1].get_text().strip()
         stu = Student.query.filter_by(number=stu_number).first()
-        print('stu obj is ',stu)
         if stu is not None or stu_number[0:4] != year:
             print('continue')
             n += 14
@@ -68,7 +67,7 @@ def parse(response, year):
         print("第%d次循环" % i)
         print(stu_number, stu_name, stu_sex, stu_grade, stu_major, stu_class, stu_level, stu_length_of_schooling)
         marjor = Major.query.filter_by(name=stu_major).first()
-        class_ = Class.query.filter_by(name=stu_major).first()
+        class_ = Class.query.filter_by(name=stu_class).first()
         # 判断marjor和class之前存在与否
         if marjor is None:
             try:
@@ -88,8 +87,8 @@ def parse(response, year):
                 db.session.rollback()
                 print("There is an error %r" % e)
                 break
-        print('##--> marjor', marjor.id)
-        print('##--> class_', class_.id)
+        # print('测试 ##--> marjor', marjor.id)
+        # print('测试 ##--> class_', class_.id)
         student = Student(
             number=stu_number,
             name=stu_name,
@@ -117,8 +116,3 @@ def test():
         print('OK')
     else:
         print('Not OK')
-
-
-if __name__ == '__main__':
-    test()
-    # parse(splider('1411'))
