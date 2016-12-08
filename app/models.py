@@ -33,8 +33,8 @@ class Score(db.Model):
     term = db.Column(db.Integer, nullable=False)
     stu_id = db.Column(db.Integer, db.ForeignKey('students.id'))
     course_id = db.Column(db.Integer, db.ForeignKey('courses.id'))
-    score1 = db.Column(db.Integer, nullable=False)
-    score2 = db.Column(db.Integer, nullable=True)  # 补考成绩可为空
+    score1 = db.Column(db.String(64), nullable=False)
+    score2 = db.Column(db.String(64), nullable=True)  # 补考成绩可为空
 
     def __repr__(self):
         return '<Score_id %r>' % self.id
