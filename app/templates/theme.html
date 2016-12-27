@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/theme.css') }}" type="text/css">
+{% endblock %}
+
+
+{% block main %}
+    <div style="display: none">
+        <p id="img-url1">{{ url_for('static',filename="img/blue_background.jpg") }}</p>
+        <p id="img-url2">{{ url_for('static',filename="img/blue_background.jpg") }}</p>
+        <p id="img-url3">{{ url_for('static',filename="img/blue_background.jpg") }}</p>
+    </div>
+    <div class="change_theme">
+        <div class="theme1">
+            <button class="button button-primary button-rounded button-large">主题更换(默认)</button>
+            <img src="{{ url_for('static',filename="img/default_background.jpeg") }}"/>
+        </div>
+        <div class="theme2">
+            <button class="button button-primary button-rounded button-large">主题更换（蓝色）</button>
+            <img src="{{ url_for('static',filename="img/blue_background.jpg") }}"/>
+        </div>
+        <div class="theme3">
+            <button class="button button-primary button-rounded button-large">主题更换（绿色）</button>
+            <img src="{{ url_for('static',filename="img/green_background.jpg") }}"/>
+        </div>
+        <div class="theme1">
+            <button class="button button-primary button-rounded button-large">主题更换(默认)</button>
+            <img src="{{ url_for('static',filename="img/default_background.jpeg") }}"/>
+        </div>
+        <div class="theme2">
+            <button class="button button-primary button-rounded button-large">主题更换（蓝色）</button>
+            <img src="{{ url_for('static',filename="img/blue_background.jpg") }}"/>
+        </div>
+        <div class="theme3">
+            <button class="button button-primary button-rounded button-large">主题更换（绿色）</button>
+            <img src="{{ url_for('static',filename="img/green_background.jpg") }}"/>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block script %}
+    <script src="{{ url_for('static',filename='js/theme.js') }}"></script>
+{% endblock %}

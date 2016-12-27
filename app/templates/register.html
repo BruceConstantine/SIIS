@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/register.css') }}" type="text/css">
+{% endblock %}
+
+
+{% block main %}
+    <div class="form_area">
+        <form action="#" method="get">
+            <h4>请输入11位学号和两次相同的密码，密码不能低于6位。</h4>
+            <br/>
+            <p>学号:&nbsp;<input type="text" class="input" id="stu_number"></p>
+
+            <p>密码:&nbsp;<input type="password" class="input" id="password1"></p>
+
+            <p>密码确认:&nbsp;<input type="password" class="input" id="password2"></p>
+
+            <input type="submit" id="submit" value="提交注册"
+                   class="button button-glow button-border button-rounded button-primary">
+            <input type="reset" value="重置操作" class="button button-glow button-border button-rounded button-primary">
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{{ url_for('static',filename='js/register.js') }}"></script>
+{% endblock %}

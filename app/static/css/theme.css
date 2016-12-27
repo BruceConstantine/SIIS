@@ -1,0 +1,26 @@
+div.change_theme {
+    width: 1000px;
+    height: 600px;
+    /*background-color: #81856d;*/
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+div.change_theme > div {
+    float: left;
+    width: 300px;
+    height: 300px;
+    /*border: solid black 1px;*/
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+div.theme1,div.theme2{
+    margin-right: 5px;
+}
+
+div.change_theme img {
+    margin-top: 15px;
+    width: 300px;
+    height: 200px;
+}

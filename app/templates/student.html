@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/student.css') }}" type="text/css">
+{% endblock %}
+
+
+{% block main %}
+    <div class="form_area">
+        <form action="#" method="get">
+            <input type="text" class="input" id="stu_number">
+            <input type="button" id="submit" value="学号查询"
+                   class="button button-glow button-border button-rounded button-primary">
+        </form>
+    </div>
+    <div class="stu_info">
+
+    </div>
+{% endblock %}
+
+
+{% block script %}
+    <script src="{{ url_for('static',filename='js/student.js') }}"></script>
+{% endblock %}

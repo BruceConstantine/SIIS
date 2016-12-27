@@ -1,0 +1,23 @@
+div.form_area {
+    height: 200px;
+    width: 1200px;
+    background-color: #eef7e6;
+}
+
+.form_area>form{
+    height: 200px;
+    width: 1200px;
+    padding-top: 120px;
+    padding-left: 400px;
+}
+
+form>.input{
+    height: 30px;
+}
+
+div .stu_info {
+    height: 600px;
+    width: 1200px;
+    background-color: #85857a;
+}
+

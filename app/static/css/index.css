@@ -1,0 +1,37 @@
+div.chart {
+    width: 1200px;
+    height: 800px;
+}
+
+div.c-top{
+    width: 1200px;
+    height: 200px;
+}
+
+div.c-top>p.create{
+    display: inline-block;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+div.c-top>p.info{
+    padding-left: 400px;
+    font-size: 20px;
+}
+
+div.c-top span{
+    color: #c95537;
+}
+
+
+div.c-bottom{
+    width: 1200px;
+    height: 600px;
+}
+
+div#chart_area{
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    /*background-color: #1b6d85;*/
+}

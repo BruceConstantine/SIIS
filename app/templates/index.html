@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}" type="text/css">
+{% endblock %}
+
+
+{% block main %}
+    <div class="chart">
+        <div class="c-top">
+            <p class="create">我们收集了<span id="count_stu">{{ count_stu }}</span>名学生信息，
+                收集了<span id="count_class">{{ count_class }}</span>个班级信息，
+                收集了<span id="count_major">{{ count_marjor }}</span>个专业信息。
+                <button class="button button-glow button-border button-rounded button-primary" id="create_chart">
+                    点击生成图表
+                </button>
+            </p>
+
+            <p class="info">数据来源：爬虫至教务处。</p>
+        </div>
+        <div class="c-bottom">
+            <div id="chart_area"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{{ url_for('static',filename='js/index.js') }}"></script>
+{% endblock %}

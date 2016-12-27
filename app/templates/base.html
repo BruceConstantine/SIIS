@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/base.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/buttons.css') }}" type="text/css">
+    {% block header %}
+    {% endblock %}
+</head>
+<body id="body">
+
+<div id="nav">
+    <div id="header">
+        <div class="header1">
+            <img src="{{ url_for('static',filename="img/sdut.gif") }}"/>
+        </div>
+        <div class="header2">
+            <p>学生信息统计总览</p>
+        </div>
+        <div class="header3">
+            <a href="#">登录</a>
+            <a href="{{ url_for('main.register') }}">注册</a>
+        </div>
+    </div>
+    <div id="menu">
+
+        <a href="{{ url_for('main.index') }}">
+            <button class="button button-primary button-rounded button-large">首页</button>
+        </a>
+        <a href="{{ url_for('main.student') }}">
+            <button class="button button-primary button-rounded button-large">学生信息查询</button>
+        </a>
+        <a href="{{ url_for('main.theme') }}">
+            <button class="button button-primary button-rounded button-large">主题更换</button>
+        </a>
+        <a href="#">
+            <button class="button button-primary button-rounded button-large" disabled="disabled">图书借阅查询</button>
+        </a>
+        <a href="#">
+            <button class="button button-primary button-rounded button-large" disabled="disabled">未开放</button>
+        </a>
+        <a href="#">
+            <button class="button button-primary button-rounded button-large" disabled="disabled">未开放</button>
+        </a>
+    </div>
+</div>
+
+<div id="main">
+    {% block main %}
+    {% endblock %}
+</div>
+
+<div id="footer">
+    <hr/>
+    <div id="copyright">
+        <p>SIIS:&nbsp;Students' information in SDUT</p>
+        <p>本项目遵循apache&nbsp;LICENSE-2.0协议进行开源，
+            <a href="https://github.com/lvhuiyang/SIIS " target="_blank">github地址</a>
+        </p>
+    </div>
+    <div id="author">
+        <p>Copyright (c) 2016 All right reserved.&nbsp;Author:
+            <a href="http://blog.csdn.net/lvhuiyang" target="_blank">lvhuiyang</a>
+        </p>
+    </div>
+</div>
+
+
+<script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='js/echarts.common.js') }}"></script>
+
+{% block script %}{% endblock %}
+
+</body>
+</html>
