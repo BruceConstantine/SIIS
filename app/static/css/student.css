@@ -1,23 +1,38 @@
 div.form_area {
     height: 200px;
     width: 1200px;
-    background-color: #eef7e6;
+    /*background-color: #eef7e6;*/
 }
 
-.form_area>form{
+.form_area > form {
     height: 200px;
     width: 1200px;
     padding-top: 120px;
     padding-left: 400px;
 }
 
-form>.input{
+form > .input {
     height: 30px;
 }
 
 div .stu_info {
     height: 600px;
     width: 1200px;
-    background-color: #85857a;
+    /*background-color: #85857a;*/
+}
+
+#stu_info {
+    padding-left: 50px;
+    display: none;
+}
+
+#stu_info th, #stu_info td {
+    border: solid 1px black;
+}
+
+#stu_info td {
+    text-align: center;
+    height: 50px;
+    width: 130px;
 }
 

@@ -7,33 +7,33 @@
 
 {% block main %}
     <div style="display: none">
-        <p id="img-url1">{{ url_for('static',filename="img/blue_background.jpg") }}</p>
+        <p id="img-url1">{{ url_for('static',filename="img/default_background.jpeg") }}</p>
         <p id="img-url2">{{ url_for('static',filename="img/blue_background.jpg") }}</p>
-        <p id="img-url3">{{ url_for('static',filename="img/blue_background.jpg") }}</p>
+        <p id="img-url3">{{ url_for('static',filename="img/green_background.jpg") }}</p>
     </div>
     <div class="change_theme">
         <div class="theme1">
-            <button class="button button-primary button-rounded button-large">主题更换(默认)</button>
+            <button class="button button-primary button-rounded button-large">主题更换(主题1)</button>
             <img src="{{ url_for('static',filename="img/default_background.jpeg") }}"/>
         </div>
         <div class="theme2">
-            <button class="button button-primary button-rounded button-large">主题更换（蓝色）</button>
+            <button class="button button-primary button-rounded button-large">主题更换（主题2）</button>
             <img src="{{ url_for('static',filename="img/blue_background.jpg") }}"/>
         </div>
         <div class="theme3">
-            <button class="button button-primary button-rounded button-large">主题更换（绿色）</button>
+            <button class="button button-primary button-rounded button-large">主题更换（主题3）</button>
             <img src="{{ url_for('static',filename="img/green_background.jpg") }}"/>
         </div>
         <div class="theme1">
-            <button class="button button-primary button-rounded button-large">主题更换(默认)</button>
+            <button class="button button-primary button-rounded button-large">主题更换(主题1)</button>
             <img src="{{ url_for('static',filename="img/default_background.jpeg") }}"/>
         </div>
         <div class="theme2">
-            <button class="button button-primary button-rounded button-large">主题更换（蓝色）</button>
+            <button class="button button-primary button-rounded button-large">主题更换（主题2）</button>
             <img src="{{ url_for('static',filename="img/blue_background.jpg") }}"/>
         </div>
         <div class="theme3">
-            <button class="button button-primary button-rounded button-large">主题更换（绿色）</button>
+            <button class="button button-primary button-rounded button-large">主题更换（主题3）</button>
             <img src="{{ url_for('static',filename="img/green_background.jpg") }}"/>
         </div>
     </div>
